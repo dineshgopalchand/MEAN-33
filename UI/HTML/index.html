@@ -5,19 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
       .top-container {
         background-color: aliceblue;
       }
       header {
         background-color: lime;
       }
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul li {
+        display: inline-block;
+        background-color: #4b54e1;
+        padding: 4px 8px;
+        border: 1px solid #9a9a9a;
+        border-radius: 5px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
     <div class="top-container">
       <header>
-        <div>Logo</div>
-        <nav>nav link</nav>
+        <div>
+          <img src="https://dummyimage.com/120x80/4a54e0/fff.jpg" alt="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./service.html">Service</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>
         <div class="banner">
