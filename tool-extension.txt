@@ -1,0 +1,9 @@
+Tools:
+VScode - Installation -completed
+VSCode - Extensions:
+	Live Server - Ritwick Dey
+	Prettier - Code formatter
+	Auto Rename Tag
+	Code Spell Checker(optional)
+
+Git-SCM 
