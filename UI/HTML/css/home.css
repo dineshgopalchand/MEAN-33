@@ -1,0 +1,33 @@
+.banner {
+  background-image: url(../images/mountains-at-sunset-cropped.jpg);
+  height: 220px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-details {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.service {
+  border: 1px solid brown;
+  padding: 5px 8px;
+  max-width: 33%;
+}
+.service h3 {
+  position: relative;
+  margin-left: 2rem;
+}
+.service h3::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0px;
+  left: -2rem;
+  border: 13px solid transparent;
+  border-left-color: red;
+  border-left-width: 29px;
+}

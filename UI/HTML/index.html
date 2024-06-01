@@ -10,119 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      @font-face {
-        font-family: "sdlc-font";
-        src: url("./fonts/Poppins/Poppins-SemiBoldItalic.ttf");
-      }
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      .top-container {
-        background-color: aliceblue;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      header {
-        background-color: rgb(176, 176, 176);
-      }
-      nav ul {
-        list-style-type: none;
-        margin: 0px;
-      }
-      nav ul li {
-        display: inline-block;
-        background-color: #4b54e1;
-        padding: 4px 8px;
-        border: 2px solid #0a0099;
-        border-radius: 5px;
-        margin: 2px 4px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: #fff;
-      }
-      nav ul li:hover {
-        box-shadow: 4px 4px 3px rgb(252, 120, 49);
-      }
-      nav ul li:hover a {
-        color: rgb(252, 120, 49);
-      }
-      /* header > div,
-      header > nav {
-        display: inline-block;
-      }
-      header > div {
-         float: left; 
-      }
-      header > nav {
-        float: right;
-      } */
-      header {
-        display: flex;
-      }
-      header nav {
-        display: flex;
-        flex-grow: 1;
-        justify-content: end;
-      }
-
-      /* header {
-        display: flex;
-        align-items: flex-start;
-      }
-      header > * {
-        flex: 1;
-      }
-      header nav {
-        display: flex;
-       justify-content: end;
-      } */
-      .container {
-        width: 85%;
-        margin: auto;
-        padding: 5px 10px;
-        box-shadow: 0px 3px 6px #9999;
-      }
-      .text-center {
-        text-align: center;
-      }
-      main {
-        flex-grow: 1;
-      }
-      .banner {
-        background-image: url(./images/mountains-at-sunset-cropped.jpg);
-        height: 220px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .m-y-1 {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-      }
-      .service-details {
-        display: flex;
-        gap: 10px;
-        justify-content: space-around;
-      }
-      .service {
-        border: 1px solid brown;
-        padding: 5px 8px;
-        max-width: 33%;
-      }
-      footer {
-        background-color: #e2e2e2;
-        background-image: linear-gradient(#e2e2e2, #a2a2a2 60%);
-        padding: 10px;
-        /* font-family: "Poppins", sans-serif;
-        font-style: italic; */
-        font-family: "sdlc-font";
-      }
-    </style>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <div class="top-container">
@@ -169,14 +58,14 @@
           <h2 class="text-center">Services</h2>
           <!-- div.service-details>div.service*3>h3{service $}+p>lorem10 -->
           <div class="service-details">
-            <div class="service">
+            <div class="service" data-node-details="service 1">
               <h3>service 1</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum, at.
               </p>
             </div>
-            <div class="service">
+            <div class="service" data-node-details="service 1">
               <h3>service 2</h3>
               <p>
                 Debitis eos architecto consectetur eligendi asperiores quam
