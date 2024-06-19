@@ -7,15 +7,16 @@
   <title>Bootstrap Intro</title>
 
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./styles/common.css" />
   <link rel="stylesheet" href="./styles/home.css" />
 </head>
 
 <body>
-  <div class="container-fluid p-0">
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid p-0 d-flex flex-column min-vh-100">
+    <header style="background-color: #0f233a;" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">SDLC</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,7 +44,7 @@
       </nav>
     </header>
     <main>
-      <div id="carouselExampleCaptions" class="carousel slide border-solid">
+      <div id="carouselExampleCaptions" class="carousel slide ">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -106,42 +107,67 @@
         </div>
       </div>
 
-      <div class="container-md my-3 p-3">
+      <div class="container-md my-3 py-3">
         <h2 class="text-center">Services</h2>
-        <div class="">
-          <div class="row">
-            <div class="col-sm-12 col-lg-4 py-3">
-              <div class="card border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Service 1</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Odio esse molestias necessitatibus asperiores ea rerum.
-                  </p>
-                </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 py-3">
+            <div class="card border border-danger">
+              <div class="card-body">
+                <h5 class="card-title">Service 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Odio esse molestias necessitatibus asperiores ea rerum.
+                </p>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-4 py-3">
-              <div class="card border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Service 2</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Odio esse molestias necessitatibus asperiores ea rerum.
-                  </p>
-                </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 py-3">
+            <div class="card border border-danger">
+              <div class="card-body">
+                <h5 class="card-title">Service 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Odio esse molestias necessitatibus asperiores ea rerum.
+                </p>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-4 py-3">
-              <div class="card border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Service 3</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Odio esse molestias necessitatibus asperiores ea rerum.
-                  </p>
-                </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 py-3">
+            <div class="card border border-danger">
+              <div class="card-body">
+                <h5 class="card-title">Service 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Odio esse molestias necessitatibus asperiores ea rerum.
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-md my-3 py-3">
+
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 py-3">
+            <h2 class="text-center">Contact us</h2>
+            <div class="contact-form">
+              contact form will go here
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 py-3">
+            <h2 class="text-center">About us</h2>
+            <div class="details">
+              <p>SDLC Training is an IT training institute that offers tailor-made courses to students and corporates
+                who intend to hone their IT Skills. Our training portfolio covers programs that span across the Software
+                Development Life Cycle, and hence the name.
+              </p>
+              <p> In the fast-moving IT industry, things become obsolete soon. So, we always keep ourselves abreast with
+                the latest trends and technologies in the IT market. We ensure that we write off obsolete technologies
+                and introduce the emerging trends from time to time so that the people who undergo our training programs
+                are equipped with the state of the art technology(s).
+              </p>
+              <p>The training sessions are conducted by Industry Experts who have vast IT industry experience in their
+                respective fields and are employed with CMMI Level 5 / Multinational companies.</p>
             </div>
           </div>
         </div>
@@ -207,11 +233,12 @@
               <div class="widget-header">Contact Details</div>
               <div class="widget-body">
                 <p><b>Call us:</b></p>
-                <p><a href="tel:+91-7760678612">+91-77606 78612</a></p>
-                <p><a href="tel:+91-8494840567"> +91-84948 40567</a></p>
+                <p><a href="tel:+91-7760678612"><i class="bi bi-telephone-fill"></i> +91-77606 78612</a></p>
+                <p><a href="tel:+91-8494840567"><i class="bi bi-telephone-fill"></i> +91-84948 40567</a></p>
 
                 <p><b>Email us:</b></p>
-                <p><a href="mailto:info@sdlctraining.in?subject=Website+Link"> info@sdlctraining.in </a></p>
+                <p><a href="mailto:info@sdlctraining.in?subject=Website+Link"> <i class="bi bi-envelope"></i>
+                    info@sdlctraining.in </a></p>
 
               </div>
             </div>
