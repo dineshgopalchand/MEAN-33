@@ -11,6 +11,22 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./styles/common.css" />
   <link rel="stylesheet" href="./styles/contact.css" />
+  <script src="./script/contact.js"></script>
+  <!-- <script>
+    console.log('we are in contact page');
+    function validateForm() {
+      console.log('form submited')
+      const formValue = document.getElementById('contactForm');
+      const inputFields = formValue.getElementsByTagName('input');
+      console.log(inputFields[0].value)
+      console.log(inputFields[1].value)
+      console.log(inputFields[2].value)
+
+      // here we can add validation
+      // if validation fail.
+      return false;
+    }
+  </script> -->
 </head>
 
 <body>
@@ -33,10 +49,10 @@
                 <a class="nav-link active" aria-current="page" href="./service.html">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./contact.html">About</a>
+                <a class="nav-link active" aria-current="page" href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./about.html">Contact</a>
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -44,7 +60,38 @@
       </nav>
     </header>
     <main>
-      <h2>Contact page</h2>
+      <div class="container my-3 shadow-lg p-3">
+        <h2>Contact Form</h2>
+        <hr>
+        <form action="./contact.html" method="get" id="contactForm" class="contact-form" autocomplete="off"
+          onsubmit="return validateForm()">
+          <div class="group">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="full-name" id="fullname" class="control" required minlength="5">
+          </div>
+          <div class="group">
+            <label for="emailid">Email</label>
+            <input type="email" name="email" id="emailid" class="control" required>
+          </div>
+          <div class="group">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" class="control" required
+              pattern="^[+]{1}(?:[0-9\-\(\)\/\.]\s?){6, 15}[0-9]{1}$">
+          </div>
+          <button>Submit</button>
+          <!-- <input type="submit" value="Submit"> -->
+        </form>
+
+        <!-- <form action='https://dummyjson.com/posts/add' method="post" class="contact-form" autocomplete="off">
+          <div class="group">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" class="control" value="Title 1">
+            <input type="hidden" name="userId" value="4">
+          </div>
+          <button>Submit</button>
+        </form> -->
+
+      </div>
     </main>
     <footer>
       <div class="container-md">
