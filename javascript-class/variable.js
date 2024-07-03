@@ -39,7 +39,7 @@ var studentCount = 3; // number
 console.log(typeof studentCount);
 var isValid = true; // boolean
 console.log(typeof isValid);
-var studentList = ["Dinesh", "Priyanka", "Deepa", "Angsuman"]; // Object(Array)
+var studentList = ["Dinesh", "Priyanka", "Deepa", "Angshuman"]; // Object(Array)
 console.log(typeof studentList);
 var studentDetails = {
   name: "Santosh",
